@@ -8,6 +8,7 @@ void sc_name(void);
 void sc_select(void);
 void sc_clear(void);
 
+void save();
 void load_savefile(void);
 
 int main(void) {
@@ -19,6 +20,7 @@ int main(void) {
   case 0:
     sc_name();
     sc_select();
+    save();
     break;
   case 1:
     load_savefile();
