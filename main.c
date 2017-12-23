@@ -20,14 +20,14 @@ int sc_title(void){
 
   while(!check_isLoad(isLoad)){
     puts("=== Pripara RPG?!?! ===");
-    puts("ロードするときは0!");
-    puts("新しく始めるときは1!");
+    puts("新しく始めるときは0!");
+    puts("ロードするときは1!");
     puts("を入力してね!");
 
     scanf("%d", &isLoad);
 
     if(!check_isLoad(isLoad))
-      puts("1か0を入力して！！！！！！");
+      puts("0か1を入力して！！！！！！");
   }
 
   return isLoad;
