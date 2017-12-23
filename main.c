@@ -4,7 +4,7 @@ int idol_id;
 char name[256];
 
 int is_clamped(int val, int start, int end){
-  return start <= val && start <= end;
+  return start <= val && val <= end;
 }
 
 int check_isLoad(int isLoad){
