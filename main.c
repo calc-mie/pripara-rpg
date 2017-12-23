@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int idol_id;
 char name[256];
@@ -89,9 +90,24 @@ void sc_clear(void){
   }
 }
 
-void save() {
-  puts("save");
+void save(void) {
+  FILE *fp;
+  fp = fopen("save.dat", "w");
+  fprintf(fp, "%d\n", idol_id);
+  fprintf(fp, "%s\n", name);
+  fclose(fp);
 }
+
 void load_savefile(void) {
-  puts("load");
+  FILE *fp;
+  fp = fopen("save.dat", "r");
+  if (fp == NULL) {
+    puts("You are fired!");
+    exit(-1);
+  }
+  else {
+    fscanf(fp, "%d", &idol_id);
+    fscanf(fp, "%s", name);
+  }
+  fclose(fp);
 }
