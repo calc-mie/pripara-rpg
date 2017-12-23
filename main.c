@@ -8,7 +8,7 @@ void sc_title(void);
 void sc_name(void);
 void sc_select(void);
 void sc_clear(void);
-void load_savedata(void);
+void load_savefile(void);
 void save(void);
 
 int main(void) {
@@ -17,7 +17,7 @@ int main(void) {
   return 0;
 }
 
-void load_savedata(void) {
+void load_savefile(void) {
   FILE *fp;
   fp = fopen("save.dat", "r");
   if (fp == NULL) {
