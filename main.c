@@ -56,13 +56,13 @@ void sc_select(void){
 void sc_clear(void){
   switch(idol_id){
   case 0: puts("そふぃは神アイドルになりました！！れっどふらっしゅ～"); break;
-  case 1: puts("らぁらは神アイドルになりました！！やったぁ！！のかしこま！！") break;
+  case 1: puts("らぁらは神アイドルになりました！！やったぁ！！のかしこま！！"); break;
   case 2: puts("みれぃは神アイドルになりました！！やったぷり！！"); break;
   }
 }
 
 int main(void) {
   puts("Welcome to PriPara RPG!!");
-
+  
   return 0;
 }
