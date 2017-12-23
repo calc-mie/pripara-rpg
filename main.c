@@ -30,3 +30,26 @@ int main(void) {
 
   return 0;
 }
+
+int sc_title(void) {
+  int i;
+  puts("sc_title");
+  scanf("%d", &i);
+  return i;
+}
+void sc_name(void) {
+  puts("sc_name");
+}
+void sc_select(void) {
+  puts("sc_select");
+}
+void sc_clear(void) {
+  puts("sc_clear");
+}
+
+void save() {
+  puts("save");
+}
+void load_savefile(void) {
+  puts("load");
+}
